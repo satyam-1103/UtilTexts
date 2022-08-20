@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Utilization</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        h4 {
+            font-family : "Poppins";
+            font-size : 18px;
+        }
+
+        textarea {
+            height : 216px;
+            width : 1475px;
+        }
+
+        button {
+            height: 50px;
+            width : 150px;
+            background-color : red;
+            color : white;
+            border: none;
+            border-radius : 7px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h4>Welcome to text Analyzer. Please enter the text below to continue</h4>
+    <form action="/analyze">
+        <textarea name="text"></textarea>
+        <br>
+        <input type="checkbox" name="removepunc">
+        <label>Remove punctuations </label>
+
+        <input type="checkbox" name="fullcaps">
+        <label>UPPERCASE </label>
+
+        <input type="checkbox" name="newlineremover">
+        <label>Remove new Line characters </label>
+
+        <input type="checkbox" name="spaceremover">
+        <label>Remove spaces </label>
+
+        <input type="checkbox" name="countchar">
+        <label>Count characters </label>
+
+        <br>
+        <button type="submit">Analyze text</button>
+    </form>
+
+
+</body>
+</html>
